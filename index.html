@@ -1,0 +1,64 @@
+<!-- index.html -->
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Math Calculator 📐</title>
+        <link rel="stylesheet" href="./style.css">
+        <script src="./main.js" defer></script>
+    </head>
+
+    <body>
+        <h1> 📐📚 Math Calculator 📚📐</h1>
+
+        <h3>Use the tools below to help with your math!</h3>
+        
+        <p>
+            Round answers to the nearest
+            <input type="number" id="rounding" value="4" placeholder="0" min="0" max="10"  class="short_number">
+            decimals.
+        </p>
+
+
+
+        
+        <hr>
+        
+        <!-- Geometry -->
+        <article>
+        <div>
+            <h2>Geometry - 3D Shapes</h2>
+<div>
+            <p> Enter the dimentions of your Rectangular Prism!</p>
+            Length: <input type="number" id="length" placeholder="0" min="0" max="10000"  class="short_number">
+            units 
+            <br>
+            <br>
+            Width: <input type="number" id="width" placeholder="0" min="0" max="10000"  class="short_number">
+            units 
+            <br>
+            <br>
+            Height: <input type="number" id="height" placeholder="0" min="0" max="10000"  class="short_number">
+            units
+            <br>
+            <br>
+            <button onclick="function1()">Find Volume of Rectangular Prism</button> 
+
+           
+            <button onclick="function2()">Find Surface Area of Rectangular Prism</button> 
+<br>
+<br>
+            <p>The Volume of Rectangular Prism is <span id="volume_output"></span></p>
+
+            <p>The Surface Area of Rectangular Prism is <span id="Sarea_output"></span></p>
+
+        <h1></h1>
+</div>
+</article>
+
+<br>
+<div>
+          
+
+    </body>
+</html>
