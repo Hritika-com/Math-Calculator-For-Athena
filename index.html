@@ -9,7 +9,7 @@
     </head>
 
     <body>
-        <h1> 📐📚 Math Calculator 📚📐</h1>
+        <h1  style="font-size: 80px;"> 📐📚 Math Calculator 📚📐</h1>
 
         <h3>Use the tools below to help with your math!</h3>
         
@@ -19,16 +19,16 @@
             decimals.
         </p>
 
-
-
-        
         <hr>
         
         <!-- Geometry -->
-        <article>
-        <div>
-            <h2>Geometry - 3D Shapes</h2>
-<div>
+
+       <br>
+            <h1 style="font-size: 50px;">Geometry - 3D Shapes</h1>
+
+            <article>
+            <!-- rectangular prism -->
+             <h2>Rectangular Prism</h2>
             <p> Enter the dimentions of your Rectangular Prism!</p>
             Length: <input type="number" id="length" placeholder="0" min="0" max="10000"  class="short_number">
             units 
@@ -42,23 +42,57 @@
             units
             <br>
             <br>
-            <button onclick="function1()">Find Volume of Rectangular Prism</button> 
+            
 
+            <button onclick="rect_prism_volume()">Find Volume of Rectangular Prism</button> 
            
-            <button onclick="function2()">Find Surface Area of Rectangular Prism</button> 
+            <button onclick="rect_prism_Sarea()">Find Surface Area of Rectangular Prism</button> 
 <br>
 <br>
             <p>The Volume of Rectangular Prism is <span id="volume_output"></span></p>
 
             <p>The Surface Area of Rectangular Prism is <span id="Sarea_output"></span></p>
 
-        <h1></h1>
+
+    </article>
+
+
+
+    <article>
+        <!-- Triangular Prism -->
+         <h2>Triangular Prism</h2>
+        
+         Base of Triangle: <input type="number" id="triBase" placeholder="0" min="0" max="10000"  class="short_number">
+         units 
+         <br>
+         <br>
+         
+         Height of Triangle: <input type="number" id="triHeight" placeholder="0" min="0" max="10000"  class="short_number">
+         units
+         <br>
+         <br>
+
+         Length of Prism: <input type="number" id="triLength" placeholder="0" min="0" max="10000"  class="short_number">
+         units 
+         <br>
+         <br>
+
+
+         <button onclick="tri_prism_volume()">Find Volume of Triangular Prism</button> 
+         <button onclick="tri_prism_Sarea()">Find Surface Area of a Right Angled Triangular Prism</button> 
+
+         <br>
+         <p>The Volume of the Triangular Prism is <span id="tri_volume_output"></span></p>
+
+         <p>The Surface Area of a Right Angled Triangular Prism is <span id="tri_SA_output"></span></p>
+
 </div>
 </article>
 
+
+
 <br>
 <div>
-          
-
+    
     </body>
 </html>
